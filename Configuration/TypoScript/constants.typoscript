@@ -8,7 +8,7 @@
 ############
 page {
     theme {
-        navigation.style = default
+        navigation.style = inverse
         meta.navigationValue = 4,6
         copyright.text = &copy; 2020 Gapp GmbH
         language.enable = 0
