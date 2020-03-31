@@ -7,6 +7,12 @@
 ### PAGE ###
 ############
 page {
+    theme {
+        navigation.style = default
+        meta.navigationValue = 4,6
+        copyright.text = &copy; 2020 Gapp GmbH
+        language.enable = 0
+    }
     logo {
         file = EXT:customer_sitepackage/Resources/Public/Images/logo.svg
         fileInverted = EXT:customer_sitepackage/Resources/Public/Images/logo-inverted.svg
@@ -17,12 +23,6 @@ page {
     }
     favicon {
         file = EXT:customer_sitepackage/Resources/Public/Icons/favicon.ico
-    }
-    theme {
-        navigation.style = default
-        meta.navigationValue = 4,6
-        copyright.text = &copy; 2020 Gapp GmbH
-        language.enable = 0
     }
     fluidtemplate {
         layoutRootPath = EXT:customer_sitepackage/Resources/Private/Layouts/Page/
