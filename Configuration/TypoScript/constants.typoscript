@@ -10,13 +10,19 @@ page {
     logo {
         file = EXT:customer_sitepackage/Resources/Public/Images/logo.svg
         fileInverted = EXT:customer_sitepackage/Resources/Public/Images/logo-inverted.svg
-        height = 52
-        width = 192
-        alt = Customer Sitepackage
-        linktitle = Customer Sitepackage
+        height = 87
+        width = 164
+        alt = Gapp Holzbau
+        linktitle = Gapp Holzbau
     }
     favicon {
         file = EXT:customer_sitepackage/Resources/Public/Icons/favicon.ico
+    }
+    theme {
+        navigation.style = default
+        meta.navigationValue = 4,6
+        copyright.text = &copy; 2020 Gapp GmbH
+        language.enable = 0
     }
     fluidtemplate {
         layoutRootPath = EXT:customer_sitepackage/Resources/Private/Layouts/Page/
@@ -47,6 +53,7 @@ plugin.bootstrap_package_contentelements {
         partialRootPath = EXT:customer_sitepackage/Resources/Private/Partials/ContentElements/
         templateRootPath = EXT:customer_sitepackage/Resources/Private/Templates/ContentElements/
     }
+    header.defaultHeaderType = 1
 }
 
 
@@ -54,6 +61,18 @@ plugin.bootstrap_package_contentelements {
 ### BOOTSTRAP SCSS CONSTANTS ###
 ################################
 plugin.bootstrap_package.settings.scss {
-    primary = #eb3e4a
-    secondary = #013859
+    primary = rgba(254,220,158,.7)
+    secondary = #701B11
+    body-color = #58585a
+    link-color = $secondary
+    blue = #61B2D4
+    red = #d4003c
+    orange = #ee9200
+    green = #9CB502
+    yellow = #F4D733
+    black = #222222
+    white = #ffffff
+    footer-sections = (content:(background: $primary, color: $body-color, link-color: $link-color), meta:(background: $body-bg, color: $body-color, link-color: $link-color))
 }
+page.preloader.logo.file = EXT:bootstrap_package/Resources/Public/Images/Icons/Ionicons/android-timer.svg
+page.preloader.backgroundColor = #eeeeee
