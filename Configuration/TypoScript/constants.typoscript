@@ -15,7 +15,7 @@ page {
         googleFont {
             enable = 1
             font = Gudea
-            300,400,700
+            weight = 300,400,700
         }
 
     }
@@ -85,7 +85,7 @@ plugin.bootstrap_package.settings.scss {
     body-bg = $white
     body-color = #58585a
     link-color = $secondary
-    link-alternate-color
+    link-alternate-color = darken($secondary, 20%)
     footer-sections = (content:(background: $primary, color: $body-color, link-color: $link-color), meta:(background: $body-bg, color: $body-color, link-color: $link-color))
 
     ### Fonts ###
