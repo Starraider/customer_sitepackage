@@ -10,7 +10,7 @@ page {
     theme {
         navigation.style = inverse
         meta.navigationValue = 4,6
-        copyright.text = &copy; 2020 Gapp GmbH
+        copyright.text = &copy; 2020 SKom
         language.enable = 0
         googleFont {
             enable = 1
@@ -35,9 +35,24 @@ page {
         backgroundColor = #eeeeee
     }
     fluidtemplate {
-        layoutRootPath = EXT:customer_sitepackage/Resources/Private/Layouts/Page/
-        partialRootPath = EXT:customer_sitepackage/Resources/Private/Partials/Page/
-        templateRootPath = EXT:customer_sitepackage/Resources/Private/Templates/Page/
+        layoutRootPath >
+        layoutRootPath {
+            0 = EXT:bootstrap_package/Resources/Private/Layouts/Page/
+            1 = EXT:skom_sitepackage/Resources/Private/Layouts/Page/
+            10 = EXT:customer_sitepackage/Resources/Private/Layouts/Page/
+        }
+        partialRootPath >
+        partialRootPath {
+            0 = EXT:bootstrap_package/Resources/Private/Partials/Page/
+            1 = EXT:skom_sitepackage/Resources/Private/Partials/Page/
+            10 = EXT:customer_sitepackage/Resources/Private/Partials/Page/
+        }
+        templateRootPath >
+        templateRootPath {
+            0 = EXT:bootstrap_package/Resources/Private/Templates/Page/
+            1 = EXT:skom_sitepackage/Resources/Private/Templates/Page/
+            10 = EXT:customer_sitepackage/Resources/Private/Templates/Page/
+        }
     }
 }
 
@@ -47,9 +62,24 @@ page {
 ##################
 plugin.bootstrap_package {
     view {
-        layoutRootPath = EXT:customer_sitepackage/Resources/Private/Layouts/
-        partialRootPath = EXT:customer_sitepackage/Resources/Private/Partials/
-        templateRootPath = EXT:customer_sitepackage/Resources/Private/Templates/
+        layoutRootPath >
+        layoutRootPath {
+            0 = EXT:bootstrap_package/Resources/Private/Layouts/
+            1 = EXT:skom_sitepackage/Resources/Private/Layouts/
+            10 = EXT:customer_sitepackage/Resources/Private/Layouts/
+        }
+        partialRootPath >
+        partialRootPath {
+            0 = EXT:bootstrap_package/Resources/Private/Partials/
+            1 = EXT:skom_sitepackage/Resources/Private/Partials/
+            10 = EXT:customer_sitepackage/Resources/Private/Partials/
+        }
+        templateRootPath >
+        templateRootPath {
+            0 = EXT:bootstrap_package/Resources/Private/Templates/
+            1 = EXT:skom_sitepackage/Resources/Private/Templates/
+            10 = EXT:customer_sitepackage/Resources/Private/Templates/
+        }
     }
 }
 
@@ -59,9 +89,24 @@ plugin.bootstrap_package {
 ########################
 plugin.bootstrap_package_contentelements {
     view {
-        layoutRootPath = EXT:customer_sitepackage/Resources/Private/Layouts/ContentElements/
-        partialRootPath = EXT:customer_sitepackage/Resources/Private/Partials/ContentElements/
-        templateRootPath = EXT:customer_sitepackage/Resources/Private/Templates/ContentElements/
+        layoutRootPath >
+        layoutRootPath {
+            0 = EXT:bootstrap_package/Resources/Private/Layouts/ContentElements/
+            1 = EXT:skom_sitepackage/Resources/Private/Layouts/ContentElements/
+            10 = EXT:customer_sitepackage/Resources/Private/Layouts/ContentElements/
+        }
+        partialRootPath >
+        partialRootPath {
+            0 = EXT:bootstrap_package/Resources/Private/Partials/ContentElements/
+            1 = EXT:skom_sitepackage/Resources/Private/Partials/ContentElements/
+            10 = EXT:customer_sitepackage/Resources/Private/Partials/ContentElements/
+        }
+        templateRootPath >
+        templateRootPath {
+            0 = EXT:bootstrap_package/Resources/Private/Templates/ContentElements/
+            1 = EXT:skom_sitepackage/Resources/Private/Templates/ContentElements/
+            10 = EXT:customer_sitepackage/Resources/Private/Templates/ContentElements/
+        }
     }
     header.defaultHeaderType = 1
 }
@@ -129,9 +174,4 @@ plugin.bootstrap_package.settings.scss {
     dropdown-border-color = darken($primary, 10%)
     dropdown-font-size = $font-size-base*0.9
 
-    dropdown-item-padding-x = 1.6rem
-    dropdown-item-padding-y = .3rem
-    dropdown-padding-y = .6rem
-
-    print-page-size = a4
 }
