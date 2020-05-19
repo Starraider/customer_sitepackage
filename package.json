@@ -1,0 +1,12 @@
+{
+  "name": "skom-customer-sitepackage",
+  "description": "Customer sitepackage Template",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Starraider/customer_sitepackage.git"
+  },
+  "homepage": "https://www.skom.de",
+  "author": "Sven Kalbhenn",
+  "version": "9.1.1",
+  "license": "GPL-2.0-or-later"
+}
