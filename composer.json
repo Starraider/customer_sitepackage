@@ -7,7 +7,7 @@
     "keywords": ["TYPO3 CMS"],
     "require": {
         "bk2k/bootstrap-package": "^11.0",
-        "skom/skom-sitepackage": "^1.0 || ^9.0"
+        "skom/skom-sitepackage": "^9.2"
     },
     "autoload": {
         "psr-4": {
