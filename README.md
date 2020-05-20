@@ -1,4 +1,7 @@
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://PayPal.me/SvenKalbhenn)
+![GitHub](https://img.shields.io/github/license/Starraider/customer_sitepackage)
+[![CodeFactor](https://www.codefactor.io/repository/github/starraider/customer_sitepackage/badge)](https://www.codefactor.io/repository/github/starraider/customer_sitepackage)
+![GitHub issues](https://img.shields.io/github/issues/Starraider/customer_sitepackage)
 ![Check Commit](https://github.com/Starraider/customer_sitepackage/workflows/Check%20Commit/badge.svg)
 ![Create Release](https://github.com/Starraider/customer_sitepackage/workflows/Create%20Release/badge.svg)
 
@@ -11,6 +14,8 @@ Every new Project is build upon a stack of 3 TYPO3 extensions:
 1. bootstrap_package as the basic
 2. skom_sitepackage optimizes the setup and adds new features
 3. customer_sitepackage hosts the configuration for each individual project
+
+---
 
 Developed 2020 by Sven Kalbhenn
 
