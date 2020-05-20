@@ -1,3 +1,4 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/starraider/customer_sitepackage/badge)](https://www.codefactor.io/repository/github/starraider/customer_sitepackage)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://PayPal.me/SvenKalbhenn)
 ![Check Commit](https://github.com/Starraider/customer_sitepackage/workflows/Check%20Commit/badge.svg)
 ![Create Release](https://github.com/Starraider/customer_sitepackage/workflows/Create%20Release/badge.svg)
