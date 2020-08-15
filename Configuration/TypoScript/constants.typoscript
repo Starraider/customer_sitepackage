@@ -7,21 +7,52 @@
 ### PAGE ###
 ############
 page {
+    theme {
+        navigation.style = inverse
+        meta.navigationValue = 4,6
+        copyright.text = &copy; 2020 SKom
+        language.enable = 0
+        googleFont {
+            enable = 1
+            font = Gudea
+            weight = 300,400,700
+        }
+
+    }
     logo {
         file = EXT:customer_sitepackage/Resources/Public/Images/logo.svg
         fileInverted = EXT:customer_sitepackage/Resources/Public/Images/logo-inverted.svg
         height = 52
         width = 192
-        alt = Customer Sitepackage
-        linktitle = Customer Sitepackage
+        alt = SKom Sitepackage
+        linktitle = SKom Sitepackage
     }
     favicon {
         file = EXT:customer_sitepackage/Resources/Public/Icons/favicon.ico
     }
+    preloader {
+        logo.file = EXT:bootstrap_package/Resources/Public/Images/Icons/Ionicons/android-timer.svg
+        backgroundColor = #eeeeee
+    }
     fluidtemplate {
-        layoutRootPath = EXT:customer_sitepackage/Resources/Private/Layouts/Page/
-        partialRootPath = EXT:customer_sitepackage/Resources/Private/Partials/Page/
-        templateRootPath = EXT:customer_sitepackage/Resources/Private/Templates/Page/
+        layoutRootPath >
+        layoutRootPath {
+            0 = EXT:bootstrap_package/Resources/Private/Layouts/Page/
+            1 = EXT:skom_sitepackage/Resources/Private/Layouts/Page/
+            10 = EXT:customer_sitepackage/Resources/Private/Layouts/Page/
+        }
+        partialRootPath >
+        partialRootPath {
+            0 = EXT:bootstrap_package/Resources/Private/Partials/Page/
+            1 = EXT:skom_sitepackage/Resources/Private/Partials/Page/
+            10 = EXT:customer_sitepackage/Resources/Private/Partials/Page/
+        }
+        templateRootPath >
+        templateRootPath {
+            0 = EXT:bootstrap_package/Resources/Private/Templates/Page/
+            1 = EXT:skom_sitepackage/Resources/Private/Templates/Page/
+            10 = EXT:customer_sitepackage/Resources/Private/Templates/Page/
+        }
     }
 }
 
@@ -31,9 +62,24 @@ page {
 ##################
 plugin.bootstrap_package {
     view {
-        layoutRootPath = EXT:customer_sitepackage/Resources/Private/Layouts/
-        partialRootPath = EXT:customer_sitepackage/Resources/Private/Partials/
-        templateRootPath = EXT:customer_sitepackage/Resources/Private/Templates/
+        layoutRootPath >
+        layoutRootPath {
+            0 = EXT:bootstrap_package/Resources/Private/Layouts/
+            1 = EXT:skom_sitepackage/Resources/Private/Layouts/
+            10 = EXT:customer_sitepackage/Resources/Private/Layouts/
+        }
+        partialRootPath >
+        partialRootPath {
+            0 = EXT:bootstrap_package/Resources/Private/Partials/
+            1 = EXT:skom_sitepackage/Resources/Private/Partials/
+            10 = EXT:customer_sitepackage/Resources/Private/Partials/
+        }
+        templateRootPath >
+        templateRootPath {
+            0 = EXT:bootstrap_package/Resources/Private/Templates/
+            1 = EXT:skom_sitepackage/Resources/Private/Templates/
+            10 = EXT:customer_sitepackage/Resources/Private/Templates/
+        }
     }
 }
 
@@ -43,10 +89,26 @@ plugin.bootstrap_package {
 ########################
 plugin.bootstrap_package_contentelements {
     view {
-        layoutRootPath = EXT:customer_sitepackage/Resources/Private/Layouts/ContentElements/
-        partialRootPath = EXT:customer_sitepackage/Resources/Private/Partials/ContentElements/
-        templateRootPath = EXT:customer_sitepackage/Resources/Private/Templates/ContentElements/
+        layoutRootPath >
+        layoutRootPath {
+            0 = EXT:bootstrap_package/Resources/Private/Layouts/ContentElements/
+            1 = EXT:skom_sitepackage/Resources/Private/Layouts/ContentElements/
+            10 = EXT:customer_sitepackage/Resources/Private/Layouts/ContentElements/
+        }
+        partialRootPath >
+        partialRootPath {
+            0 = EXT:bootstrap_package/Resources/Private/Partials/ContentElements/
+            1 = EXT:skom_sitepackage/Resources/Private/Partials/ContentElements/
+            10 = EXT:customer_sitepackage/Resources/Private/Partials/ContentElements/
+        }
+        templateRootPath >
+        templateRootPath {
+            0 = EXT:bootstrap_package/Resources/Private/Templates/ContentElements/
+            1 = EXT:skom_sitepackage/Resources/Private/Templates/ContentElements/
+            10 = EXT:customer_sitepackage/Resources/Private/Templates/ContentElements/
+        }
     }
+    header.defaultHeaderType = 1
 }
 
 
@@ -54,6 +116,62 @@ plugin.bootstrap_package_contentelements {
 ### BOOTSTRAP SCSS CONSTANTS ###
 ################################
 plugin.bootstrap_package.settings.scss {
-    primary = #eb3e4a
-    secondary = #013859
+    ### colors ###
+    blue = #61B2D4
+    red = #d4003c
+    orange = #ee9200
+    green = #9CB502
+    yellow = #F4D733
+    black = #222222
+    white = #ffffff
+
+    primary = rgba(254,220,158,.7)
+    secondary = #701B11
+    body-bg = $white
+    body-color = #58585a
+    link-color = $secondary
+    link-alternate-color = darken($secondary, 20%)
+    footer-sections = (content:(background: $gray-200, color: $body-color, link-color: $link-color), meta:(background: $body-bg, color: $body-color, link-color: $link-color))
+
+    ### Fonts ###
+    font-family-sans-serif = -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+    font-family-base = $font-family-sans-serif
+    font-size-base = 1rem
+
+    ### Headings ###
+    headings-font-family = "#{$google-webfont}", sans-serif
+    headings-color = $secondary
+    headings-font-weight = 400
+    headings-margin-bottom = $spacer / 2
+    h1-font-size = $font-size-base * 2.5
+    h2-font-size = $font-size-base * 1.8
+    h3-font-size = $font-size-base * 1.5
+    h4-font-size = $font-size-base * 1.2
+    h5-font-size = $font-size-base * 1
+
+    ### Navbar ###
+    # Background Color is set vin the theme.scss
+    #navbar-heights = (lg: 200px, xl: 125px)
+    navbar-brand-padding-y = 0.5rem
+    navbar-nav-link-padding-x = 1rem
+    navbar-padding-x = $spacer
+    navbar-padding-y = $spacer /2
+
+    navbar-light-color = $secondary
+    navbar-light-active-color = $secondary
+    navbar-light-hover-color = $secondary
+
+    ### Dropdown ###
+    dropdown-bg = $primary
+    dropdown-link-hover-bg = darken($primary, 5%)
+    dropdown-link-active-bg = darken($primary, 5%)
+
+    dropdown-color = $link-color
+    dropdown-link-color = $link-color
+    dropdown-link-hover-color = darken($link-color, 10%)
+    dropdown-link-active-color = darken($link-color, 10%)
+
+    dropdown-border-color = darken($primary, 10%)
+    dropdown-font-size = $font-size-base*0.9
+
 }
