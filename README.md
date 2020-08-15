@@ -2,8 +2,9 @@
 ![GitHub](https://img.shields.io/github/license/Starraider/customer_sitepackage)
 [![CodeFactor](https://www.codefactor.io/repository/github/starraider/customer_sitepackage/badge)](https://www.codefactor.io/repository/github/starraider/customer_sitepackage)
 ![GitHub issues](https://img.shields.io/github/issues/Starraider/customer_sitepackage)
+![Lint Code Base](https://github.com/Starraider/customer_sitepackage/workflows/Lint%20Code%20Base/badge.svg)
+![CodeQL](https://github.com/Starraider/customer_sitepackage/workflows/CodeQL/badge.svg)
 ![Check Commit](https://github.com/Starraider/customer_sitepackage/workflows/Check%20Commit/badge.svg)
-![Create Release](https://github.com/Starraider/customer_sitepackage/workflows/Create%20Release/badge.svg)
 
 # customer_sitepackage
 
