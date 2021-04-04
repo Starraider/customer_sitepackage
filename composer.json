@@ -10,6 +10,11 @@
         "bk2k/bootstrap-package": "^11.0",
         "skom/skom-sitepackage": "^9.2"
     },
+    "extra": {
+      "typo3/cms": {
+			  "extension-key": "customer_sitepackage"
+		  }
+    },
     "autoload": {
         "psr-4": {
             "Skom\\CustomerSitepackage\\": "Classes/"
