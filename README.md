@@ -16,6 +16,11 @@ Every new Project is build upon a stack of 3 TYPO3 extensions:
 2. skom_sitepackage optimizes the setup and adds new features
 3. customer_sitepackage hosts the configuration for each individual project
 
+## Dependency:
+
+-   [bk2k/bootstrap-package](https://extensions.typo3.org/extension/bootstrap_package): ^11
+-   [skom/skom-sitepackage](https://github.com/Starraider/skom_sitepackage): ^9.2.13
+
 ---
 
 Developed 2020 by Sven Kalbhenn
