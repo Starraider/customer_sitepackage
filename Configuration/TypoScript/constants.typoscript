@@ -38,20 +38,20 @@ page {
         layoutRootPath >
         layoutRootPath {
             0 = EXT:bootstrap_package/Resources/Private/Layouts/Page/
-            1 = EXT:skom_sitepackage/Resources/Private/Layouts/Page/
-            10 = EXT:customer_sitepackage/Resources/Private/Layouts/Page/
+            10 = EXT:skom_sitepackage/Resources/Private/Layouts/Page/
+            20 = EXT:customer_sitepackage/Resources/Private/Layouts/Page/
         }
         partialRootPath >
         partialRootPath {
             0 = EXT:bootstrap_package/Resources/Private/Partials/Page/
-            1 = EXT:skom_sitepackage/Resources/Private/Partials/Page/
-            10 = EXT:customer_sitepackage/Resources/Private/Partials/Page/
+            10 = EXT:skom_sitepackage/Resources/Private/Partials/Page/
+            20 = EXT:customer_sitepackage/Resources/Private/Partials/Page/
         }
         templateRootPath >
         templateRootPath {
             0 = EXT:bootstrap_package/Resources/Private/Templates/Page/
-            1 = EXT:skom_sitepackage/Resources/Private/Templates/Page/
-            10 = EXT:customer_sitepackage/Resources/Private/Templates/Page/
+            10 = EXT:skom_sitepackage/Resources/Private/Templates/Page/
+            20 = EXT:customer_sitepackage/Resources/Private/Templates/Page/
         }
     }
 }
@@ -65,20 +65,20 @@ plugin.bootstrap_package {
         layoutRootPath >
         layoutRootPath {
             0 = EXT:bootstrap_package/Resources/Private/Layouts/
-            1 = EXT:skom_sitepackage/Resources/Private/Layouts/
-            10 = EXT:customer_sitepackage/Resources/Private/Layouts/
+            10 = EXT:skom_sitepackage/Resources/Private/Layouts/
+            20 = EXT:customer_sitepackage/Resources/Private/Layouts/
         }
         partialRootPath >
         partialRootPath {
             0 = EXT:bootstrap_package/Resources/Private/Partials/
-            1 = EXT:skom_sitepackage/Resources/Private/Partials/
-            10 = EXT:customer_sitepackage/Resources/Private/Partials/
+            10 = EXT:skom_sitepackage/Resources/Private/Partials/
+            20 = EXT:customer_sitepackage/Resources/Private/Partials/
         }
         templateRootPath >
         templateRootPath {
             0 = EXT:bootstrap_package/Resources/Private/Templates/
-            1 = EXT:skom_sitepackage/Resources/Private/Templates/
-            10 = EXT:customer_sitepackage/Resources/Private/Templates/
+            10 = EXT:skom_sitepackage/Resources/Private/Templates/
+            20 = EXT:customer_sitepackage/Resources/Private/Templates/
         }
     }
 }
@@ -92,20 +92,20 @@ plugin.bootstrap_package_contentelements {
         layoutRootPath >
         layoutRootPath {
             0 = EXT:bootstrap_package/Resources/Private/Layouts/ContentElements/
-            1 = EXT:skom_sitepackage/Resources/Private/Layouts/ContentElements/
-            10 = EXT:customer_sitepackage/Resources/Private/Layouts/ContentElements/
+            10 = EXT:skom_sitepackage/Resources/Private/Layouts/ContentElements/
+            20 = EXT:customer_sitepackage/Resources/Private/Layouts/ContentElements/
         }
         partialRootPath >
         partialRootPath {
             0 = EXT:bootstrap_package/Resources/Private/Partials/ContentElements/
-            1 = EXT:skom_sitepackage/Resources/Private/Partials/ContentElements/
-            10 = EXT:customer_sitepackage/Resources/Private/Partials/ContentElements/
+            10 = EXT:skom_sitepackage/Resources/Private/Partials/ContentElements/
+            20 = EXT:customer_sitepackage/Resources/Private/Partials/ContentElements/
         }
         templateRootPath >
         templateRootPath {
             0 = EXT:bootstrap_package/Resources/Private/Templates/ContentElements/
-            1 = EXT:skom_sitepackage/Resources/Private/Templates/ContentElements/
-            10 = EXT:customer_sitepackage/Resources/Private/Templates/ContentElements/
+            10 = EXT:skom_sitepackage/Resources/Private/Templates/ContentElements/
+            20 = EXT:customer_sitepackage/Resources/Private/Templates/ContentElements/
         }
     }
     header.defaultHeaderType = 1
