@@ -9,7 +9,7 @@ $EM_CONF[$_EXTKEY] = [
     'category' => 'templates',
     'constraints' => [
         'depends' => [
-            'bootstrap_package' => '11.0.0-11.0.99',
+            'bootstrap_package' => '10.0.10-11.99.99',
             'skom_sitepackage' => '9.2.13-9.99.99',
         ],
         'conflicts' => [
@@ -21,11 +21,9 @@ $EM_CONF[$_EXTKEY] = [
         ],
     ],
     'state' => 'stable',
-    'uploadfolder' => 0,
-    'createDirs' => '',
-    'clearCacheOnLoad' => 1,
+    'clearCacheOnLoad' => true,
     'author' => 'Sven Kalbhenn',
     'author_email' => 'sven@skom.de',
     'author_company' => 'SKom',
-    'version' => '9.0.5',
+    'version' => '9.1.0',
 ];

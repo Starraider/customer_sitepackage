@@ -8,5 +8,8 @@
   "homepage": "https://www.skom.de",
   "author": "Sven Kalbhenn",
   "version": "9.0.3",
-  "license": "GPL-2.0-or-later"
+  "license": "GPL-2.0-or-later",
+  "devDependencies": {
+    "@commitlint/config-conventional": "^12.1.1"
+  }
 }

@@ -1,1 +1,7 @@
 .DS_Store
+.ld
+*.old
+
+/node_modules
+
+.TER_Accesstokens
