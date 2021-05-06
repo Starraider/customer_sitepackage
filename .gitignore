@@ -1,1 +1,5 @@
 .DS_Store
+.ld
+*.old
+
+.TER_Accesstokens
