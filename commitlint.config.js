@@ -1,11 +1,5 @@
 module.exports = {
-    extends: ["@commitlint/config-conventional", "@commitlint/parse"],
-    parserPreset: {
-        parserOpts: {
-            headerPattern: /^(\[\w*\])?:\(?(\w*)\)?\s(.+)/,
-            headerCorrespondence: ["type", "scope", "subject"],
-        },
-    },
+    extends: "@commitlint/config-conventional",
     rules: {
         "type-enum": [
             2,
@@ -19,14 +13,8 @@ module.exports = {
                 "[RELEASE]",
             ],
         ],
-        "type-case": [2, "always", "upper-case"],
-        "type-empty": [2, "never"],
-        "header-max-length": [2, "always", 80],
+        "type-case": "upper-case",
+        "type-empty": "never",
         "subject-case": [2, "always", "sentence-case"],
-        "subject-empty": [2, "never"],
-        "subject-full-stop": [2, "never", "."],
-        "body-leading-blank": [2, "always"],
-        "body-max-line-length": [2, "always", 72],
-        "footer-leading-blank": [2, "always"],
     },
 };
