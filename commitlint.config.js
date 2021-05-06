@@ -16,7 +16,7 @@ module.exports = {
                 "[DOCS]",
                 "[TASK]",
                 "[SECURITY]",
-                "[RELEASE]",,
+                "[RELEASE]",
             ],
         ],
         "type-case": [2, "always", "upper-case"],
