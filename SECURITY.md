@@ -10,7 +10,6 @@ currently being supported with security updates.
 | 9.0.3  | :white_check_mark: |
 | <= 9.0.2  | :x:                |
 
-
 ## Reporting a Vulnerability
 
 If you find any vulnerability in my code, please report it to sven@skom.de, as soon as possibly.
