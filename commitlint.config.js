@@ -13,8 +13,8 @@ module.exports = {
                 "[RELEASE]",
             ],
         ],
-        "type-case": "upper-case",
-        "type-empty": "never",
+        "type-case": [2, "always", "upper-case"],
+        "type-empty": [2, "never"],
         "subject-case": [2, "always", "sentence-case"],
     },
 };
