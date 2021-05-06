@@ -2,4 +2,6 @@
 .ld
 *.old
 
+/node_modules
+
 .TER_Accesstokens
