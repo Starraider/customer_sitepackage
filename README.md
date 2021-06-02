@@ -16,6 +16,25 @@ Every new Project is build upon a stack of 3 TYPO3 extensions:
 2. skom_sitepackage optimizes the setup and adds new features
 3. customer_sitepackage hosts the configuration for each individual project
 
+## Basic concept
+
+This extensions is a kickstart sitepackage, which you can use to configure your own TYPO3 project (based on bootstrap_package).
+Use this extension to apply your own changes, like colors, fonts, logos etc.
+
+To do this, you should detache this exentsion from it's original git repository after you have installed it in your
+project, because you don't want your own changes be overwriten by updating the git repo.
+
+To detach this extension from it's original repo:
+
+```batch
+git rm --cached packages/customer_sitepackage
+rm -rf customer_sitepackage/.git
+rm -rf customer_sitepackage/.github
+rm -rf .git/modules/packages/customer_sitepackage (if you have installed it as submodule)
+```
+
+After you have detached it from the original repo, you can make your own repo out of it, with your own changes.
+
 ## Dependency
 
 - [bk2k/bootstrap-package](https://extensions.typo3.org/extension/bootstrap_package): ^11
