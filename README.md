@@ -60,7 +60,7 @@ git clone https://github.com/Starraider/customer_sitepackage.git . [1]
 
 #### 3. Run composer update
 
-The customer_sitepackage will autmaticly be symlinked into the typo3conf/ext/ folder.
+The customer_sitepackage will automaticly be symlinked into the typo3conf/ext/ folder.
 
 #### 4. Include Static Template
 
