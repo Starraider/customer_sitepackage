@@ -47,10 +47,11 @@ git clone https://github.com/Starraider/customer_sitepackage.git . [1]
 ```json
 {
     "repositories": [
-    {
-        "type": "path",
-        "url": "packages/*"
-    },
+        {
+            "type": "path",
+            "url": "packages/*"
+        },
+    ],
     "require": {
         "skom/customer-sitepackage": "@dev"
     },
@@ -62,6 +63,7 @@ git clone https://github.com/Starraider/customer_sitepackage.git . [1]
 The customer_sitepackage will autmaticly be symlinked into the typo3conf/ext/ folder.
 
 #### 4. Include Static Template
+
 #### 5. Detach this extension from it's original repo
 
 ```batch
