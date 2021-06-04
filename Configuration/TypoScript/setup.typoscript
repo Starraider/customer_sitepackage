@@ -3,6 +3,12 @@
 ######################
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:skom_sitepackage/Configuration/TypoScript/setup.typoscript">
 
+#############################################################
+#### EXTENSIONS                                          ####
+#### Manual inclusion to keep control over loading order ####
+#############################################################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fotoblog_sitepackage/Configuration/TypoScript/setup.typoscript" condition="userFunc = TYPO3\\CMS\\Core\\Utility\\ExtensionManagementUtility::isLoaded('fotoblog_sitepackage')">
+
 
 ##############
 #### PAGE ####
@@ -10,21 +16,18 @@
 page {
     10 = FLUIDTEMPLATE
     10 {
+        templateRootPaths < page.10.templateRootPaths
         templateRootPaths {
-            0 = EXT:bootstrap_package/Resources/Private/Templates/Page/
-            10 = EXT:skom_sitepackage/Resources/Private/Templates/Page/
             20 = EXT:customer_sitepackage/Resources/Private/Templates/Page/
             30 = {$page.fluidtemplate.templateRootPath}
         }
+        partialRootPaths < page.10.partialRootPaths
         partialRootPaths {
-            0 = EXT:bootstrap_package/Resources/Private/Partials/Page/
-            10 = EXT:skom_sitepackage/Resources/Private/Partials/Page/
             20 = EXT:customer_sitepackage/Resources/Private/Partials/Page/
             30 = {$page.fluidtemplate.partialRootPath}
         }
+        layoutRootPaths < page.10.layoutRootPaths
         layoutRootPaths {
-            0 = EXT:bootstrap_package/Resources/Private/Layouts/Page/
-            10 = EXT:skom_sitepackage/Resources/Private/Layouts/Page/
             20 = EXT:customer_sitepackage/Resources/Private/Layouts/Page/
             30 = {$page.fluidtemplate.layoutRootPath}
         }
