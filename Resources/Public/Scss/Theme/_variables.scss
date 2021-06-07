@@ -1,3 +1,29 @@
 //
 // Variables
 //
+$headline-scaling: () !default;
+$headline-scaling: map-merge(
+    (
+        xs: 1,
+        sm: 1,
+        md: 1,
+        lg: 1,
+        xl: 1
+    ),
+    $headline-scaling
+);
+//
+// Frame Inner Spacing
+//
+$frame-inner-spacing: 2rem !default;
+$frame-inner-spacing-scaling: () !default;
+$frame-inner-spacing-scaling: map-merge(
+    (
+        xs: 1,
+        sm: 1.25,
+        md: 1.5,
+        lg: 1.75,
+        xl: 1.75,
+    ),
+    $frame-inner-spacing-scaling
+);
