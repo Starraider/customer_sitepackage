@@ -9,8 +9,5 @@
 // You should use the 2 lines below if this customer_sitepackage is not installed in the packages folder.
 // Look here for more info: https://docs.typo3.org/m/typo3/guide-installation/master/en-us/MigrateToComposer/BestPractices.html
 //
-// @import "../../../../../bootstrap_package/Resources/Public/Scss/Theme/theme";
-// @import "../../../../../skom_sitepackage/Resources/Public/Scss/Theme/theme";
-@import "../../../../../../public/typo3conf/ext/bootstrap_package/Resources/Public/Scss/Theme/theme";
-@import "../../../../../../public/typo3conf/ext/skom_sitepackage/Resources/Public/Scss/Theme/theme";
-//@import "../../../../../../public/typo3conf/ext/fotoblog_sitepackage/Resources/Public/Scss/Theme/theme";
+@import "../../../../../bootstrap_package/Resources/Public/Scss/Theme/theme";
+@import "../../../../../skom_sitepackage/Resources/Public/Scss/Theme/theme";
