@@ -8,8 +8,8 @@ $EM_CONF[$_EXTKEY] = [
     'category' => 'templates',
     'constraints' => [
         'depends' => [
-            'bootstrap_package' => '11.0.3-11.99.99',
-            'skom_sitepackage' => '9.2.13-9.99.99',
+            'bootstrap_package' => '12.0.1-12.99.99',
+            'skom_sitepackage' => '10.0.0-10.99.99',
         ],
         'conflicts' => [
         ],
@@ -24,5 +24,5 @@ $EM_CONF[$_EXTKEY] = [
     'author' => 'Sven Kalbhenn',
     'author_email' => 'sven@skom.de',
     'author_company' => 'SKom',
-    'version' => '9.1.1'
+    'version' => '10.0.0'
 ];
